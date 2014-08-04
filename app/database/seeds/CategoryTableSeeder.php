@@ -1,5 +1,7 @@
 <?php
 
+use diti\Entities\Category;
+
 class CategoryTableSeeder extends Seeder {
 
 	public function run()

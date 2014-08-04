@@ -11,10 +11,12 @@
 		"laravel/framework": "4.2.*"
 	},
 	"autoload": {
+		"psr-4" : {
+			"diti\\" : "app/diti"
+		},
 		"classmap": [
 			"app/commands",
 			"app/controllers",
-			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"

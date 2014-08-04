@@ -15,7 +15,7 @@
   <link href="{{ asset ('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="jumbotron.css" rel="stylesheet">
+  <link href="{{ asset ('style.css') }}" rel="stylesheet">
 
  
 
