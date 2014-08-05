@@ -4,13 +4,47 @@
 <div class="jumbotron">
   <div class="container">
     <h1>Welcome!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+    <p>Proyecto de prueba en laravel de postulación de desarrolladores</p>
+    <p><a href="https://github.com/juan55860/diti">https://github.com/juan55860/diti</a></p>
+    <p><a class="btn btn-primary btn-lg" role="button">Acceder &raquo;</a></p>
   </div>
 </div>
 
 <div class="container">
   <!-- Example row of columns -->
+
+  <h1> Últimos candidatos </h1>
+  <h1> Backend Developers </h1>
+  <table class="table table-striped">
+    <thead>
+
+      <tr>
+        <th>Nombre</th>
+        <th>Tipo de trabajo</th>
+        <th>Descripción</th>
+        <th>Ver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Juan Camilo Varela</td>
+        <td>Backend developer</td>
+        <td>Learning Laravel</td>
+        <td width="50">
+          <a href="" class="btn btn-info">Ver</a>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <p>
+    <a href="">Ver Todos Backen-developer</a>
+  </p>
+
   <div class="row">
     <div class="col-md-4">
       <h2>Heading</h2>
