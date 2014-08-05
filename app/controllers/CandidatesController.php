@@ -2,20 +2,28 @@
 
 use diti\Entities\Category;
 use diti\Repositories\CategoryRepo;
+use diti\Repositories\CandidateRepo;
 
 class CandidatesController extends BaseController
 { 
 	protected $categoryRepo;
+	protected $candidateRepo;
 
-	function __construct(CategoryRepo $categoryRepo) 
+	function __construct(CategoryRepo $categoryRepo, CandidateRepo $candidateRepo) 
 	{
-		$this->categoryRepo = $categoryRepo;
+		$this->categoryRepo  = $categoryRepo;
+		$this->candidateRepo = $candidateRepo;
 	}
 
 	public function category($slug, $id)
 	{
-		$category = $this->categoryRepo->find($id);
-		
+		$category = $this->categoryRepo->find($id);	
 		return View::make('candidates/category', compact('category'));
+	}
+
+	public function show($slug, $id)
+	{
+		$candidate = $this->candidateRepo->find($id);
+		return View::make('candidates/show',compact('candidate'));
 	}
 }

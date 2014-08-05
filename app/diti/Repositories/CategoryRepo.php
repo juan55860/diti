@@ -4,10 +4,10 @@ namespace diti\Repositories;
 
 use diti\Entities\Category;
 
-class CategoryRepo 
+class CategoryRepo extends BaseRepository
 {
-	public function find($id)
+	public function getModel()
 	{
-		return Category::find($id);
-	}
+		return new Category;
+	}	
 }
