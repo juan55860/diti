@@ -9,5 +9,10 @@ class Category extends \Eloquent {
 	{
 		return $this->hasMany('diti\Entities\Candidate');
 	}
+
+	public function getPaginateCandidatesAttribute()
+	{
+		return Candidate::where('category_id', $this->id)->paginate(5);
+	}
 	
 }

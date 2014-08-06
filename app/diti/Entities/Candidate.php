@@ -14,4 +14,9 @@ class Candidate extends \Eloquent {
 	{
 		return $this->belongsTo('diti\Entities\Category');
 	}
+    // Atributo Virtual
+	public function getJobTypeTitleAttribute()
+	{
+		return \Lang::get('utils.job_types.'. $this->job_type);
+	}
 }

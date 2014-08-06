@@ -6,7 +6,8 @@
     <h1>Welcome!</h1>
     <p>Proyecto de prueba en laravel de postulación de desarrolladores</p>
     <p><a href="https://github.com/juan55860/diti">https://github.com/juan55860/diti</a></p>
-    <p><a class="btn btn-primary btn-lg" role="button">Acceder &raquo;</a></p>
+    <p><a href="{{ route('sign_up') }}" class="btn btn-primary btn-lg" role="button">Acceder &raquo;</a>
+    </p>
   </div>
 </div>
 

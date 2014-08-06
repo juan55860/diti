@@ -10,7 +10,7 @@
     </a>
 
   </p>
-  <p>Tipo de trabajo: {{ $candidate->job_type }}</p>
+  <p>Tipo de trabajo: {{ $candidate->job_type_title }}</p>
   <p>Sitio web: <a href="{{ $candidate->website_url }}">{{ $candidate->website_url }}</a></p>
 
   <h4>Descripción</h4>
