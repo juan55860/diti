@@ -26,7 +26,7 @@
 
 			<div class="form-group">
 				{{ Form::label('password_confirmation','Repite Clave') }}
-				{{ Form::password('full_name',['class' =>'form-control' ]) }}
+				{{ Form::password('password_confirmation',['class' =>'form-control' ]) }}
 			</div>
 			
 			<p>
